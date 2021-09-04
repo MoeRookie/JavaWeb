@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<!--  
+    框架标签:
+        frameset:   一个frameset可以把一个页面切割成多份.只能按照行或者列切割.
+        frame:      不能被切割, frame是位于frameset中.
+
+    注意: frameset标签不能用于body标签体内容.   
+    
+    iframe: 在一个网页中分隔一部分的位置显示另外一个网页的信息.
+-->
+<frameset rows="20%, 70%, *">
+    <frame src="head.html"/>
+    <frameset cols="20%, *">
+        <frame src="navigation.html"/>
+        <frame name="content" src="content.html"/>
+    </frameset>
+    <frame src="foot.html"/>
+</frameset>
+</html>
