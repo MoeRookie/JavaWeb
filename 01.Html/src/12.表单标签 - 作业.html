@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12.表单标签 - 作业</title>
+</head>
+<body>
+    <form action="https://www.baidu.com" method="POST">
+        <table align="center" border="1px" bordercolor="black" width="500px" height="480px">
+            <tbody>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input name="user_name" type="text"/></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input name="password" type="password"/></td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td>男 <input name="sex" value="man" type="radio" checked="true"/>女 <input name="sex" value="woman" type="radio"/></td>
+                </tr>
+                <tr>
+                    <td>爱好：</td>
+                    <td>
+                        篮球 <input name="hobit" value="basketball" type="checkbox" checked="true"/>
+                        足球 <input name="hobit" value="football" type="checkbox" checked="true"/>
+                      羽毛球 <input name="hobit" value="badminton" type="checkbox"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>来自哪个城市：</td>
+                    <td>
+                        <select name="city">
+                            <option value="BJ">北京</option>
+                            <option value="SH">上海</option>
+                            <option value="GZ">广州</option>
+                            <option value="SZ">深圳</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>大头照：</td>
+                    <td><input name="avatar" type="file"/></td>
+                </tr>
+                <tr>
+                    <td>自我介绍：</td>
+                    <td>
+                        <textarea name="intro" rows="10" cols="30"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="提交数据"/>
+                    <input type="reset" value="重置"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
