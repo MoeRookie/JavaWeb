@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--  
+    Html在一个网页中负责的事情是一个页面的结构
+
+    CSS(层叠样式表)在一个网页中主要负责了页面的数据样式
+
+    编写CSS代码的方式:
+        方式一: 在style标签中编写CSS代码[ 只能用于本页面中, 复用性不强. ]
+            格式:
+                <style type="text/css">
+                    编写CSS的代码
+                </style>
+            例子:
+                <style type="text/css">
+                    a{
+                        color: red;
+                        text-decoration: none;
+                    }
+                </style>
+        方式二: 可以引入外部的CSS文件.[ 推荐使用. ]
+            第一种:
+                格式:
+                    <link href="CSS文件的路径" rel="stylesheet"/>
+                例子:
+                    <link href="02.待引入的CSS样式.css" rel="stylesheet"/>
+            第二种:
+                格式:   
+                    <style type="text/css">
+                        @import url("CSS文件的路径");
+                    </style>
+                例子:
+                    <style type="text/css">
+                        @import url("02.待引入的CSS样式.css");
+                    </style>
+        方式三: 直接在html标签中使用 style 属性编写[ 只能用于本标签中, 复用性较差, 不推荐使用. ]
+            例子: 
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01.CSS样式的引入</title>
+    <style type="text/css">
+    /* 
+        Html的注释: <!-- -->
+        CSS的注释: /* */
+
+        /*
+    */
+    </style>
+</head>
+<body>
+    <h1>标题01</h1>
+    <a href="#" style="color: red; text-decoration: none;">新闻的标题01</a>
+    <a href="#">新闻的标题02</a>
+    <a href="#">新闻的标题03</a>
+    <a href="#">新闻的标题04</a>
+    <a href="#">新闻的标题05</a>
+    <a href="#">新闻的标题06</a>
+</body>
+</html>
