@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04.伪类选择器</title>
+    <style type="text/css">
+        /*
+            伪类选择器: 伪类选择器就是对元素处于某种状态下进行样式化的.
+
+            注意*:
+                01.a:hover必须被置于a:link和a:visited之后
+                02.a:active必须被置于a:hover之后
+        */
+        a:link{color: red} /* 没有被点击过->红色 */
+        a:visited{color: green} /* 已经被访问过->绿色 */
+        a:hover{color: blue} /* 鼠标经过->蓝色 */
+        a:active{color: yellow} /* 选中(eg.未抬起)->黄色 */
+    </style>
+</head>
+<body>
+    <a href="#">百度</a>
+</body>
+</html>

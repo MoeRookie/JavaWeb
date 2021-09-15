@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03.选择器</title>
+    <style type="text/css">
+    /*
+        选择器: 选择器的作用就是找到对应的数据进行样式化
+
+        01.标签选择器: 就是找到所有指定的标签进行样式化
+            格式: 
+                标签名{
+                    样式1;样式2...
+                }
+            例子:
+                div{
+                    color:red;
+                    font-size: 24px;
+                }
+        02.类选择器: 使用类选择器首先要给Html标签指定对应的class属性值.
+            格式:
+                .class的属性值{
+                    样式1;样式2...
+                }
+            例子:      
+                .two{
+                    background-color: green;
+                    color: red;
+                    font-size: 24px;
+                }
+            类选择器要注意的事项:
+                01.Html元素的class属性值一定不能以数字开头.
+                02.类选择器的样式要优先于标签选择器的样式.
+        03.id选择器: 使用ID选择器首先要给Html标签指定对应的id属性值.
+            格式:
+                #id属性值{
+                    样式1;样式2...
+                }
+            例子:
+                #one{
+                    background-color: #ff9;
+                    color: #999;
+                    font-size: 18px;
+                }
+            id选择器要注意的事项:
+                01.id选择器的样式优先级是最高的, 优先于类选择器和标签选择器
+                02.id的属性值也是不能以数字开头的.
+                03.id的属性值在一个html页面中只能出现一次.
+        04.交集选择器: 就是对选择器1中的选择器2里面的数据进行样式化.
+            格式:
+                选择器1 选择器2{
+                    样式1;样式2...
+                }
+            例子: 
+                .two span{
+                    background-color: #999;
+                    font-size: 24px;
+                }
+        05.并集选择器: 对指定的选择器进行统一的样式化.
+            格式:
+                选择器1,选择器2...{
+                    样式1;样式2...
+                }
+            例子:
+                span,a{
+                    border-style: solid;
+                    border-color: red;
+                }
+        06.通用选择器: 
+            格式: 
+                *{
+                    样式1;样式2...
+                }
+    */
+        *{
+            text-decoration: line-through;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="one" class="two">这个是<span>第一个div标签</span></div>
+    <div id="one" class="two">这个是<span>第二个div标签</span></div>
+    <span>这个是一个span标签</span></br>
+    <a class="two" href="#">新闻标题</a>
+</body>
+</html> 

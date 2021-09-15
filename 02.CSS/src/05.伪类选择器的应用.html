@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05.伪类选择器的应用</title>
+    <style type="text/css">
+        table{
+            background-color: gainsboro;
+            border-collapse: collapse;
+            border: 3px;
+        }
+        tr:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px" width="400px" height="300px" align="center">
+        <tr>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>人品</th>
+        </tr>
+        <tr>
+            <th>张三</th>
+            <th>98</th>
+            <th>差</th>
+        </tr>
+        <tr>
+            <th>李四</th>
+            <th>50</th>
+            <th>极好</th>
+        </tr>
+        <tr align="center">
+            <th>综合测评</th>
+            <th colspan="2">不错</th>
+        </tr>
+    </table>
+</body>
+</html>
