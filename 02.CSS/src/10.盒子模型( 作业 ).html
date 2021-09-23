@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10.盒子模型( 作业 )</title>
+    <style type="text/css">
+        .outer{
+            border-style: solid;
+            width: 370px;
+            height: 200px;
+            margin-top: 250px;
+            margin-left: 420px;
+            background-image: url(../res/03.QQ.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        input{
+            border-color: black;
+            border-width: 3px;
+        }
+        .username{
+            margin-left: 80px;
+            margin-top: 40px;
+        }
+        .password{
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        #login{
+            width: 180px;
+            height: 30px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="username">
+            用户名&nbsp;<input type="text"/>
+        </div>
+        <div class="password">
+            密&nbsp;&nbsp;&nbsp;码&nbsp;<input type="password">
+        </div>
+        <div>
+            <input id="login" type="submit" value="登录"/>
+        </div>
+    </div>
+</body>
+</html>
