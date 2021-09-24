@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01.JavaScript的历史</title>
+    <!--  
+        Html: 负责了一个页面的结构
+        CSS : 负责了一个页面的样式
+        JavaScript: 负责与用户进行交互
+
+        JavaScript的历史:
+            微软  盖茨认为未来是"视窗"的世界。  
+            网景： 1995年退出了一款浏览器（导航者）和liveScript(校验功能)， 非常受欢迎。
+            和sun公司合作，借用了java的名字，把liveScirpt改名成javascript。  70%市场份额。
+            盖茨知错了,盖茨找网景的老大判断， 不同意  （领航者)。
+            盖茨一年投资20亿美元去开发JScript.  微软 :捆绑销售+免费。   45美元
+    	    1998年被美国在线的公司收购， 03年的时候网景宣布破产。  
+            同意赔钱7亿美元   拿出2千万美金成立了一个基金会（Mozilla ）谋智+ 把浏览器的源代码全部开工。
+
+        1997年欧洲的计算机协议(ECMA)组织出来给JavaScript规定协议.
+            01.ECMAScript(规范了基本语法而已)
+            02.BOM(浏览器对象模型)
+            03.DOM(文档对象模型)
+
+        JavaScript的特点:
+            01.跨平台
+            02.安全性(JavaScript的代码不能直接访问硬盘的内容)
+
+        JavaScript与Java之间的区别:
+            01.JavaScript是属于网景公司的产品, Java是SUN公司的产品.
+            02.JavaScript是基于对象的语言, Java是面向对象的语言.
+            03.JavaScript是解释型语言, Java是编译、解释型语言.
+            04.JavaScript是弱类型语言, Java是强类型语言.
+
+            Java中声明变量的时候必须要明确该变量的数据类型.
+            JavaScript声明变量不需要明确是何种数据类型, 任何的变量都是使用一个关键字 var 去声明即可.
+
+        如何编写JavaScript代码:
+            方式01: 可以在<script>标签内进行编写
+                <script type="text/javascript">
+                    js代码;
+                </script>
+            方式02: 引入外部的JavaScript文件.
+                <script src="待引入的JavaScript文件" type="text/javascript"></script>
+
+                注意:
+                    01.<script>是有开始标签与结束标签的, 千万不要在一个标签中结束了.
+                    02.如果<script>已经用于引入的js文件, 那么<script>标签体就不能再写js代码了.
+        JavaScript常用的函数:
+            alert("显示的内容..."); 弹出框
+            document.write("数据"); 向页面输出数据
+
+        页面的注释:
+                Html的注释: <!--
+                CSS的注释: /* 注释的内容 */
+                JavaScript的注释: // 注释的内容[单行注释] /* 注释的内容 */[多行注释]
+
+    -->
+    <script src="../src/02.待引入的JavaScript文件.js" type="text/javascript"></script>
+    <script>
+        alert("呵呵!");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
