@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03.声明变量</title>
+    <script type="text/javascript">
+    /*
+        JavaScript的变量声明:
+            格式: var 变量名 = 数据;
+
+            声明变量要注意的事项:
+                01.在JavaScript中声明变量是使用 var 关键字声明的, JavaScript中的变量可以存储任意数据类型的数据.
+                02.JavaScript中变量的数据类型是根据存储的值决定的, 可以随时更改存储数据的类型.
+                03.定义了多个同名的变量时,后定义的同名变量会覆盖前面定义的同名变量.
+                04.声明变量的时候可以省略 var 关键字,但是不建议省略.
+
+        JavaScript的数据类型(findBugs):
+            typeof 查看变量的数据类型
+            格式: typeof 变量名
+
+            number      小数与整数
+            string      字符串      注意*: JavaScript中没有字符的概念, 只有字符串, 字符串可以写在单引号或双引号中.
+            boolean     布尔数据类型
+            undefined   代表该变量没有定义
+
+    */
+        document.write("10的数据类型是:::" + (typeof 10) + "<br/>")
+        document.write("3.14的数据类型是:::" + (typeof 3.14) + "<br/>")
+        document.write("a的数据类型是:::" + (typeof 'abc') + "<br/>")
+        document.write("abc的数据类型是:::" + (typeof "abc") + "<br/>")
+        document.write("a变量的数据类型是:::" + (typeof a) + "<br/>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
