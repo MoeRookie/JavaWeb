@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05.运算符</title>
+    <script type="text/javascript">
+    /*
+        运算符:
+            +(加法、正数、连接符)
+                true是1, false是0
+
+            var a = 1;
+            document.write((1 + true) + "<br/>"); // 2
+            document.write((1 + false) + "<br/>"); // 1
+            document.write("Hello," + 1); // Hello,1
+
+
+            除法:
+
+            var a = 10;
+            var b = 3;
+            // 如果两个整数相除不能整除的时候结果还是小数.
+            document.write("除法运算的结果是: " + (a/b) + "<br/>"); // 3.3333333333333335
+
+
+            比较:
+
+            字符串与字符串的比较规则是:
+                情况01: 能找到对应位置上的不同字符, 那么就比较第一个不同字符的大小(ascii码)
+                情况02: 不能找到对应位置上的不同字符, 这时候比较的是两个字符串的长度.
+
+            document.write("10大于3吗?" + (10>3) + "<br/>");
+            document.write("10字符串大于3字符串吗?" + ("190">"19") + "<br/>"); // true
+            // 字符串还可以与数字进行比较( 凡是数字与字符串进行比较, 会先把字符串转换成数字再进行比较的. )
+            document.write("10大于字符串9吗?" + (10 > "9") + "<br/>"); // true
+
+            逻辑运算符:
+            
+            // 没有单与的.
+            document.write((true && true) + "<br/>"); // true
+            document.write((true && false) + "<br/>"); // false
+            document.write((false && true) + "<br/>"); // false
+            document.write((false && false) + "<br/>"); // false
+
+            // 同样也没有单或
+            document.write((true || true) + "<br/>"); // true
+            document.write((true || false) + "<br/>"); // true
+            document.write((false || true) + "<br/>"); // true
+            document.write((false || false) + "<br/>"); // false
+
+            三目运算符:
+                布尔表达式?值1:值2;
+    */
+        var age = 19;
+        document.write(age > 18?"成年人":"未成年人");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
