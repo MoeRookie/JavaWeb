@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06.控制流程语句</title>
+    <script type="text/javascript">
+    /*
+        控制流程语句:
+            if语句
+                格式:
+                    if(判断条件){
+                        符合条件执行的代码...
+                    }
+                if语句的特殊之处:
+                    01.在JavaScript中的if语句,条件不单只可以写布尔表达式,还可以写任何数据.
+
+                    Number      非0为true,0为false
+                    String      内容不能空为true,内容空的时候是false
+                    undefined   false
+                    NaN         false
+
+                    var workAge = 1;
+                    var str = "";
+                    var b;
+                    if(b){
+                        document.write("明天过来面试！");
+                    }else{
+                        document.write("不要再投我们公司了，不要你！");
+                    }
+
+            选择语句
+                格式:
+                    switch(变量){
+                        case 值1:
+                            break;
+                        case 值2:
+                            break;
+                        case 值3:
+                            break;
+                        ...
+                        default:
+                            break;
+                    }
+
+                特殊之处:
+                    01.在JavaScript中case后面可以跟常量与变量, 还可以跟表达式.
+                    
+    */
+        var option = "B";
+        var a = "A";
+        var score = 98;
+        switch(option){
+            case (score >= 90?"A":"B"):
+                document.write("Java");
+                break;
+            case "B":
+                document.write("PS");
+            case "C":
+                document.write("JavaScript");
+            case "D":
+                document.write("C++");
+                break;
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
