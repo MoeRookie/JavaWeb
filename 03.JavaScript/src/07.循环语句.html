@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07.循环语句</title>
+    <script type="text/javascript">
+    /*
+        while
+            格式:
+                while(判断的条件){
+                    循环体的内容;
+                }
+            示例:
+                01.打印五句Hello,World!
+                var count = 0;
+                while(count < 5){
+                    document.write("Hello,World!<br/>");
+                    count++;
+                }
+
+                02.计算1~100的总和
+                var num = 1;
+                var result = 0;
+                while(num<=100){
+                    result += num;
+                    num++;
+                }
+                document.write("结果: " + result); // 5050
+        do-while
+            格式:
+                do{
+                    循环语句;
+                }while(判断条件);
+            示例:
+                eg.计算1~100奇数的和
+                var num = 1;
+                var result = 0; // 2500
+                do{
+                    if(num % 2 != 0){
+                        result += num;
+                    }
+                    num++;
+                }while(num <= 100);
+                document.write("结果: " + result);
+
+        for
+            格式:
+                for(初始化语句;判断的条件;循环后的语句){
+                    循环体语句;
+                }
+            示例:
+                eg.计算1~100偶数的和.
+
+    */
+        var result = 0;
+        for(var i = 1; i <= 100; i++){
+            if(i % 2 == 0){
+                result += i;
+            }
+        }
+        document.write("结果: " + result); // 2550
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
