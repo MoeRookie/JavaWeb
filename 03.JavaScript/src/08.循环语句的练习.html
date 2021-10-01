@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08.循环语句的练习</title>
+    <script type="text/javascript">
+    /*
+        01.用"*"打印一个5行5列的矩形
+        *****
+        *****
+        *****
+        *****
+        *****
+        示例:
+            for(var i=1;i <= 5;i++){ // 外层循环控制行
+                for(var j = 1;j <= 5;j++){ // 内层循环控制列
+                    document.write("*&nbsp");
+                }
+                document.write("<br/>");
+            }
+        02.用"*"输出一个直角三角形
+        *
+        **
+        ***
+        ****
+        *****
+        示例:
+            for(var i=1;i<=5;i++){ // 外层循环控制行
+                for(var j=1;j <= i;j++){ // 内层循环控制列
+                    document.write("*&nbsp");
+                }
+                document.write("<br/>");
+            }
+        03.打印九九乘法表
+    */
+        for(var i = 1;i <= 9;i++){ // 外层循环控制行
+            for(var j=1;j <= i;j++){ // 内层循环控制列
+                document.write(j + "*" + i + "=" + (j*i) + "&nbsp;&nbsp;");
+            }
+            document.write("<br/>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
