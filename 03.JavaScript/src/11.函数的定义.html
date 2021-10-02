@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11.函数的定义</title>
+    <script type="text/javascript"> 
+    /*
+        函数的定义:
+            格式:
+                function 函数名(形参列表){
+                    函数体;
+                }
+            需求: 定义一个函数做两个参数的加法功能.
+
+            JavaScript的函数要注意的细节:
+                01.在JavaScript中函数定义形参时是不能使用var关键字声明变量的
+                02.在JavaScript中的函数是没有返回值类型的,如果函数需要返回数据给调用者,直接返回即可,如果不需要返回则不返回
+                03.在JavaScript中是没有函数重载的概念的,后定义的同名函数会直接覆盖前面定义的同名函数
+                04.在JavaScript中任何函数的内部都隐式的维护了一个arguments(数组)的对象, 给函数传递数据的时候, 是会先传递到arguments对象中,
+                   然后再由arguments对象分配数据给形参的
+    */
+        function add(a, b){
+            var sum = a+b;
+            document.write("两个参数的总和: " + sum); // 3
+            // return sum;
+        }
+
+        function add(){
+            document.write("长度: " + arguments.length + "<br/>"); // 4
+            for(var i=0;i<arguments.length;i++){
+                document.write(arguments[i] + ",") // 11,21,13,14
+            }
+            // var sum = a+b+c;
+            // var sum = 0;
+            // document.write("三个参数的总和: " + sum);
+        }
+
+        add(11,21,13,14); // 调用函数(6)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
