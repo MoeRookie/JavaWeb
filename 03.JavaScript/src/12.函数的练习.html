@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12.函数的练习</title>
+    <script type="text/javascript">
+        /*
+            显示输入月份对应的日期
+        */
+        function showDay(){
+            // 找到对应标签的对象
+            var inputMonth = document.getElementById("input_month");
+            // 获取month数据
+            var monthStr = inputMonth.value;
+            
+            var month = parseInt(monthStr);
+            switch(month){
+                case 1:
+                case 3: 
+                case 5:
+                case 7: 
+                case 8:
+                case 10: 
+                case 12:
+                    alert("本月是31天！");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    alert("本月是30天！");
+                    break;
+                case 2:
+                    alert("本月是28天！");
+                    break;
+                default:
+                    alert("没有该月份！");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    月份：<input id="input_month" type="text"/><input type="button" value="查询" onclick="showDay()"/>
+</body>
+</html>
