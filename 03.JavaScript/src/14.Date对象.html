@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14.日期对象</title>
+    <script type="text/javascript">
+    /*
+        日期对象(Date)
+    */
+        var date = new Date(); // 获取到当前的系统时间
+        document.write("年: " + date.getFullYear() + "<br/>");
+        document.write("月: " + (date.getMonth() + 1) + "<br/>");
+        document.write("日: " + date.getDate() + "<br/>");
+
+        document.write("时: " + date.getHours() + "<br/>");
+        document.write("分: " + date.getMinutes() + "<br/>");
+        document.write("秒: " + date.getSeconds() + "<br/>");
+
+        // yyyy年mm月dd日 hh:mm:ss
+        document.write("当前时间是: " + date.toLocaleString() + "<br/>");
+        
+        var currentTime = "当前时间是: " + date.getFullYear() + "年" + (date.getMonth()+1) + "月" +
+                          date.getDate() + "日 " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        document.write(currentTime);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
