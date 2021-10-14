@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22.prototype原型属性</title>
+    <script type="text/javascript">
+    /*
+        prototype原型属性:
+            需求: 想要把getMax()和getIndex()方法添加到数组对象中
+            funcation Array(){
+                this.prototype = new Object();
+            }
+
+        prototype要注意的细节:
+            01.prototype是函数(function)的一个必备属性(书面一点的说法是"保留属性"), 只要是function, 就一定有一个prototype属性.
+            02.prototype的值是一个对象
+            03.可以任意修改函数prototype属性的值
+            04.一个对象会自动拥有prototype的所有成员属性和方法
+    */
+        Array.prototype.getMax = function(){
+            var max = this[0];
+            for(var index in this){
+                if(this[index] > max){
+                    max = this[index];
+                }
+            }
+            return max;
+        }
+
+        Array.prototype.getIndex = function(target){
+            for(var index in this){
+                if(this[index] == target){
+                    return index;
+                }
+            }
+            return -1;
+        }
+
+        var arr = [12,4,17,9];
+        var max = arr.getMax(); // 17
+        var index = arr.getIndex(9); // 3
+
+        document.write("最大值: " + max + "<br/>");
+        document.write("索引值: " + index);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
