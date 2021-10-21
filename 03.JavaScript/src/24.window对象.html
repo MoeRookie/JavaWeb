@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>24.window对象</title>
+    <script type="text/javascript">
+    /*
+        JavaScript组成部分:
+            EMCAScript(基本语法)
+            BOM(Browser Object Model): 浏览器对象模型
+                浏览器对象模型中把浏览器的各个部分都是用了一个对象进行描述, 
+                如果我们要操作浏览器的一些属性, 我们就可以通过浏览器对象模型的对象进行操作.
+            DOM(...在后续章节中学习)
+
+        window: 代表了一个新开的窗口
+        location: 代表了地址栏对象
+        screen: 代表了整个屏幕的对象
+
+        window对象常用的方法:
+            open()      打开一个新的窗口
+            setInterval 每经过指定毫秒值后就会执行指定的代码
+            setTimeout  经过指定毫秒值后执行指定的代码一次
+
+        注意*: 使用window对象的任何属性与方法都可以省略window对象不写的.
+
+    */
+        function showAd(){
+            open("ad.html","_blank","height=400px,width=400px,toolbar=no,location=no,top=200px");
+        }
+
+        setTimeout("showAd()");
+
+        // var id = window.setInterval("showAd()", 2000);
+
+        function clearTask(){
+            clearInterval(id);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="showAd()" value="下载电影"/>
+    <input type="button" onclick="clearTask()" value="取消定时任务"/>
+</body>
+</html>
