@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>25.事件的注册</title>
+    <script type="text/javascript">
+    /*
+        事件:
+            事件注册的方式:
+                方式一: 直接在html元素上注册
+                    <body onload="ready()"></body>
+                    function ready(){
+                        alert("body元素被加载完毕了...");
+                    }
+                方式二: 通过js代码找到对应的对象后再注册(推荐使用)
+    */
+        var bodyNode = document.getElementById("body");
+        bodyNode.onload = function(){
+            alert("body元素被加载完毕了...");
+        }
+    </script>
+</head>
+<body id="body">
+    
+</body>
+</html>
