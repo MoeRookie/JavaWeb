@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>27.location对象</title>
+    <script type="text/javascript">
+    /*
+        地址栏对象(location):
+            href: 设置以及获取地址栏中的url
+            reload: 刷新当前页面
+    */
+        function showUrl(){
+            alert(location.href);
+        }
+
+        function download(){
+            location.href = "https://www.baidu.com";
+        }
+
+        function reFresh(){
+            location.reload();
+        }
+
+        window.setInterval("reFresh()", 3000);
+    </script>
+</head>
+<body>
+    <input type="button" onclick="showUrl()" value="显示地址栏"/></br>
+    <span onclick="download()">下载电影</span>
+</body>
+</html>
