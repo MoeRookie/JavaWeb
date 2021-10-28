@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>29.Dom编程入门</title>
+    <script type="text/javascript"> 
+    /*
+        DOM(Document Object Model): 文档对象模型
+            一个html页面在被浏览器加载的时候, 浏览器就会对整个html页面上的所有标签创建一个对应的对象
+            进行描述, 我在浏览器上看到的信息只不过就是这些html对象的属性(信息)而已;
+            我们只要找到对应的对象操作其属性, 则可以改变浏览器当前显示的内容.
+
+            var allNode = document.all; // 获取html文件中的所有标签节点
+            for(var index = 0;index < allNode.length; index++){
+                alert(allNode[index].nodeName); // nodeName: 标签的名字
+            }
+    */
+        function writeUrl(){
+            var links =  document.links; // 获取文档中含有href属性的标签
+            for(var index = 0;index < links.length;index++){
+                links[index].href = "https://www.baidu.com";
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="#">标题01</a>
+    <a href="#">标题02</a>
+    <a href="#">标题03</a>
+    <input type="button" value="设置a标签的地址" onclick="writeUrl()"/>
+</body>
+</html>
