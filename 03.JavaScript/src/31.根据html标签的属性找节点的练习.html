@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>31.根据html标签的属性找节点的练习</title>
+    <script type="text/javascript">
+        function checkAll(allNode){
+            // 找到每一个商品选项
+            var items = document.getElementsByName("item");
+            // 将每个选项的选中状态设置为跟全选选项的一致
+            for(var index=0;index<items.length;index++){
+                items[index].checked = allNode.checked;
+            }
+        }
+
+        function getSum(){
+            var sum = 0;
+            // 找到每一个商品选项
+            var items = document.getElementsByName("item");
+            for(var index=0;index<items.length;index++){
+                // 筛选出选中的商品选项
+                if(!items[index].checked){
+                    continue; // 没有被选中, 则跳过本次循环
+                }
+                sum += parseInt(items[index].value);
+            }
+            // 显示到span_sum上
+            var spanSum = document.getElementById("span_sum");
+            spanSum.innerHTML = ("&nbsp;&yen;" + sum).fontcolor("green");
+        }
+    </script>
+</head>
+<body>
+    <div>商品列表</div>
+    <input type="checkbox" name="item" value="3000"/>笔记本电脑3000元<br/>
+    <input type="checkbox" name="item" value="1800"/>笔记本电脑1800元<br/>
+    <input type="checkbox" name="item" value="300"/>笔记本电脑300元<br/>
+    <input type="checkbox" name="item" value="3000"/>笔记本电脑3000元<br/>
+    <input type="checkbox" name="item" value="3000"/>笔记本电脑3000元<br/>
+    <input type="checkbox" name="all" onclick="checkAll(this)"/>全选<br/>
+    <input type="button" value="总金额" onclick="getSum()"/><span id="span_sum"></span>
+</body>
+</html>
