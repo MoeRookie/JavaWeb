@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>33.创建节点、插入节点</title>
+    <script type="text/javascript">
+    /*
+        创建节点、插入节点、设置节点的属性:
+            document.createElement("标签名");   创建新元素节点
+            elt.setAttribute("属性名","属性值");设置属性
+            elt.appendChild(e);                 添加元素到elt中最后的位置
+    */
+        var num = 1;
+        function add(){
+            var inputNode = document.createElement("input"); // 创建一个指定标签名字的节点
+            // 设置节点的属性
+            inputNode.setAttribute("type","button");
+            inputNode.setAttribute("value", "按钮"+num);
+            num++;
+            // 添加子节点
+            var bodyNode = document.getElementsByTagName("body")[0];
+            bodyNode.appendChild(inputNode);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="add()" value="添加"/>
+</body>
+</html>
