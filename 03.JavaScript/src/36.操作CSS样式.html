@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>36.操作CSS样式</title>
+    <script type="text/javascript">
+        // 创建一个四位的验证码
+        function createCode(){
+            // A-Z,0-9 += 36位
+            var datas = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9'];
+            var code = "";
+            for(var index=0;index<4;index++){
+                // 随机产生四个索引值
+                var i = Math.round(Math.random() * (datas.length-1));
+                code += datas[i];
+            }
+            var spanCode = document.getElementById("span_code");
+            spanCode.innerHTML = code;
+            spanCode.style.fontSize = "24px";
+            spanCode.style.color = "red";
+            spanCode.style.backgroundColor = "gray";
+        }
+
+        function ready(){
+            createCode();
+        }
+    </script>
+</head>
+<body onload="ready()">
+    <span id="span_code"></span><a href="#" onclick="createCode()">看不清，换一个</a>
+</body>
+</html>
