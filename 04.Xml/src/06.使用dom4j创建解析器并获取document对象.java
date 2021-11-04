@@ -11,7 +11,7 @@ public class Demo1 {
 			//1.创建一个xml解析器对象
 			SAXReader reader = new SAXReader();
 			//2.读取xml文档，返回Document对象
-			Document doc = reader.read(new File("./src/contact.xml"));
+			Document doc = reader.read(new File("./src/07.contact.xml"));
 			System.out.println(doc);
 		} catch (DocumentException e) {
 			e.printStackTrace();
